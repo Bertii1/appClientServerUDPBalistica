@@ -9,7 +9,6 @@ public class TimeServerIterative {
 
     public static void main(String[] args) {
         int port = 9876;
-
         try (DatagramSocket socket = new DatagramSocket(port)) {
             System.out.println("Server UDP (Single Thread) avviato sulla porta " + port);
 

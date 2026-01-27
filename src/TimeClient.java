@@ -10,7 +10,7 @@ public class TimeClient {
         int port = 9876;
 
         try (DatagramSocket socket = new DatagramSocket()) {
-            // Timeout opzionale: se il server non risponde in 5 secondi, il client sblocca
+            // Timeout opzionale: se il server non risponde in 5 secondi, il client lancia un'eccezione
             socket.setSoTimeout(5000);
 
             // 1. Invio richiesta (payload vuoto o messaggio a piacere)
